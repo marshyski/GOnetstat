@@ -78,7 +78,6 @@ func getData(t string) []string {
     data, err := ioutil.ReadFile(proc_t)
     if err != nil {
         fmt.Println(err)
-        os.Exit(1)
     }
     lines := strings.Split(string(data), "\n")
 
